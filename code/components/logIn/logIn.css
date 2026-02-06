@@ -1,0 +1,16 @@
+@media screen
+{
+ #togglePassword
+ {
+  display:none;
+ }
+ .buttonEffect
+ {
+  cursor:pointer;
+  transition:transform 0.1s ease;
+ }
+ .buttonEffect:active
+ {
+  transform:translateY(0.125rem);
+ }
+}

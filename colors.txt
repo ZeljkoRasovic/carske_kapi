@@ -1,0 +1,4 @@
+Pozadina: #282b24 // crnkasta boja
+Boja teksta: #807340 // zlatna boja
+Akcenat boja: #612c29 // crvenkasta
+🐵🙈

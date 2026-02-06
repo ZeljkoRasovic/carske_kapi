@@ -1,0 +1,105 @@
+@media screen
+{
+ .input
+ {
+  width:14.8rem;
+ }
+ #BirthdateDate
+ {
+  padding:0.269rem;
+ }
+ #BirthdateDayText
+ {
+  width:4rem;
+ }
+ #BirthdateMonthText
+ {
+  width:5rem;
+ }
+ #BirthdateYearText
+ {
+  width:4.5rem;
+ }
+ #BirthdateSwitcher,#BirthdateCustomDate,#BirthdateTextLabel,#BirthdateDayTextLabel,
+ #BirthdateMonthTextLabel,#BirthdateYearTextLabel,#CountrySwitcher,#CountryTextLabel,
+ #CountryText,#CountryCodeLabel,#CountryCodeText,#ContryCodeBr,#CitySwitcher,#CityTextLabel,
+ #CityText,#PostalCodeLabel,#PostalCodeText,#GuideTextForPostalCode,#PhoneSwitcher,#togglePassword
+ {
+  display:none;
+ }
+ @keyframes appear
+ {
+  from
+  {
+   opacity:0;
+  }
+  to
+  {
+   opacity:1;
+  }
+ }
+ #BirthdateSwitcher:checked~#BirthdateLabelGroup > #BirthdateLabelGroupText > #BirthdateDateLabel,
+ #BirthdateSwitcher:checked~#BirthdateDateInput > #BirthdateDate,
+ #CountrySwitcher:checked~#ContryLabelGroup > #ContryLabelGroupText > #CountrySelectLabel,
+ #CountrySwitcher:checked~#CountryInputGroup > #CountrySelect,
+ #CountrySwitcher:checked~#CountryInputGroup > #CountrySelect,
+ #CountrySwitcher:checked~#CityLabelGroup > #CityLabelGroupText > #CitySelectLabel,
+ #CountrySwitcher:checked~#CityInputGroup > #CitySelect,
+ #CountrySwitcher:checked~#CityLabelGroup > #CitySwitcherLabelDiv > #CitySwitcherLabel,
+ #CitySwitcher:checked~#CityLabelGroup > #CityLabelGroupText > #CitySelectLabel,
+ #CitySwitcher:checked~#CityInputGroup > #CitySelect,
+ #PhoneSwitcher:checked~#PhoneInputGroup > #PhoneCountryCodePart
+ {
+  display:none;
+ }
+ #BirthdateSwitcher:checked~#BirthdateLabelGroup > #BirthdateLabelGroupText > #BirthdateTextLabel,
+ #BirthdateSwitcher:checked~#BirthdateLabelGroup > #BirthdateLabelGroupText > #BirthdateDayTextLabel,
+ #BirthdateSwitcher:checked~#BirthdateLabelGroup > #BirthdateLabelGroupText > #BirthdateMonthTextLabel,
+ #BirthdateSwitcher:checked~#BirthdateLabelGroup > #BirthdateLabelGroupText > #BirthdateYearTextLabel,
+ #BirthdateSwitcher:checked~#BirthdateCustomDate,
+ #CountrySwitcher:checked~#ContryLabelGroup > #ContryLabelGroupText > #CountryTextLabel,
+ #CountrySwitcher:checked~#CountryInputGroup > #CountryText,
+ #CountrySwitcher:checked~#ContryCodeGroup > #CountryCodeLabel,
+ #CountrySwitcher:checked~#CityLabelGroup > #CityLabelGroupText > #CityTextLabel,
+ #CountrySwitcher:checked~#CityInputGroup > #CityText,
+ #CountrySwitcher:checked~#PostalCodeGroup > #PostalCodeLabel,
+ #CountrySwitcher:checked~#PostalCodeGroup > #PostalCodeText,
+ #CitySwitcher:checked~#CityLabelGroup > #CityLabelGroupText > #CityTextLabel,
+ #CitySwitcher:checked~#CityInputGroup > #CityText,
+ #CitySwitcher:checked~#PostalCodeGroup > #PostalCodeLabel,
+ #CitySwitcher:checked~#PostalCodeGroup > #PostalCodeText
+ {
+  display:block;
+  animation:appear 1s;
+ }
+ #CountrySwitcher:checked~#ContryCodeGroup > #CountryCodeText,
+ #CountrySwitcher:checked~#PostalCodeGroup > #GuideTextForPostalCode,
+ #CitySwitcher:checked~#PostalCodeGroup > #GuideTextForPostalCode
+ {
+  display:block;
+  animation:appear 1s;
+  margin:0 0 1.2rem 0;
+ }
+ #PhoneCountryCodePart
+ {
+  width:5rem;
+ }
+ #PhoneTextPart
+ {
+  max-width:9.8rem;
+ }
+ #PhoneSwitcher:checked~#PhoneInputGroup > #PhoneTextPart
+ {
+  animation:appear 1s;
+  min-width:100%;
+ }
+ .buttonEffect
+ {
+  cursor:pointer;
+  transition:transform 0.1s ease;
+ }
+ .buttonEffect:active
+ {
+  transform:translateY(0.125rem);
+ }
+}

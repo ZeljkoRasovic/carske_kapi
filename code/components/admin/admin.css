@@ -1,0 +1,10 @@
+@media screen
+{
+ body {font-family: Arial; margin:20px;}
+ table {border-collapse: collapse; width:100%;}
+ th, td {border:1px solid #aaa; padding:6px;}
+ .activated {color:green; font-weight:bold;}
+ .banned {color:red; font-weight:bold;}
+ .input {width:25%;}
+ .select {width:100%;}
+}
